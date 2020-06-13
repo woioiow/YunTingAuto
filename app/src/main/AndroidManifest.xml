@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shinyv.cnr">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.shinyv.cnr.CntCenteApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logopic"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/default_ui_bg"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute"
+        android:hardwareAccelerated="false"
+        tools:replace="android:allowBackup,android:label">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <!--小米全面屏适配 https://dev.mi.com/console/doc/detail?pid=1160-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2" />
+        <!--适配华为（huawei）刘海屏-->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <!--适配小米（xiaomi）刘海屏-->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <activity
+            android:name="com.shinyv.cnr.StartActivity_"
+            android:configChanges="orientation|keyboard"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/_start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.linker.xlyt.module.single.test.AlbumNewActivity"
+            android:theme="@style/status_bar_theme" />
+        <activity
+            android:name="com.linker.xlyt.module.homepage.MainActivitys"
+            android:launchMode="singleTask"
+            android:theme="@style/status_bar_theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.linker.xlyt.module.play.SongNewActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/status_bar_theme" />
+        <activity
+            android:name="com.linker.xlyt.module.play.programorder.ProgramListActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/status_bar_theme" />
+        <activity
+            android:name="com.linker.xlyt.module.mine.subscribe.MySubscribeActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/status_bar_theme" />
+        <activity
+            android:name="com.linker.xlyt.module.play.PlayActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/status_bar_theme" />
+        <activity
+            android:name="com.linker.xlyt.components.search.SearchActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/status_bar_theme" />
+        <activity
+            android:name="com.linker.xlyt.module.comment.WebCommentActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/status_bar_theme" />
+        <activity
+            android:name="com.linker.xlyt.module.wallet.WalletMainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/status_bar_theme" />
+        <activity
+            android:name="com.linker.xlyt.module.wallet.VirtualCoinRechargeActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/status_bar_theme" />
+        <activity
+            android:name="com.linker.xlyt.module.wallet.VipH5Activity"
+            android:launchMode="singleTask"
+            android:theme="@style/status_bar_theme" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5eaa8d23570df3a3240003ed" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="yt" />
+    </application>
+
+</manifest>
