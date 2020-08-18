@@ -99,10 +99,10 @@
 
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="5eaa8d23570df3a3240003ed" />
+            android:value="5eeb34df570df3995d000015" />
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="yt" />
+            android:value="ytumeng" />
     </application>
 
 </manifest>

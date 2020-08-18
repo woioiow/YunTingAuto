@@ -44,53 +44,53 @@ public class JumpUtils {
         int path = getRandomPath();
         if (path <= 3) {
             pathStr = "开屏-首页-专辑详情-单曲播放页-专辑详情-首页";
-            jumpIntents.add(getIntent(context, MainActivitys.class, 5));
-            jumpIntents.add(getIntent(context, AlbumNewActivity.class, 2));
-            jumpIntents.add(getIntent(context, SongNewActivity.class, 3));
-            jumpIntents.add(getIntent(context, AlbumNewActivity.class, 10));
-            jumpIntents.add(getIntent(context, MainActivitys.class, 1));
+            jumpIntents.add(getIntent(context, MainActivitys.class, 40));
+            jumpIntents.add(getIntent(context, AlbumNewActivity.class, 30));
+            jumpIntents.add(getIntent(context, SongNewActivity.class, 30));
+            jumpIntents.add(getIntent(context, AlbumNewActivity.class, 20));
+            jumpIntents.add(getIntent(context, MainActivitys.class, 20));
             jumpIntents.add(getIntent(context, MainActivitys.class, -1));
         } else if (path <= 5) {
             pathStr = "开屏-首页-节目单-电台播放页-首页";
-            jumpIntents.add(getIntent(context, MainActivitys.class, 10));
-            jumpIntents.add(getIntent(context, ProgramListActivity.class, 5));
-            jumpIntents.add(getIntent(context, PlayActivity.class, 3));
-            jumpIntents.add(getIntent(context, MainActivitys.class, 1));
+            jumpIntents.add(getIntent(context, MainActivitys.class, 55));
+            jumpIntents.add(getIntent(context, ProgramListActivity.class, 30));
+            jumpIntents.add(getIntent(context, PlayActivity.class, 34));
+            jumpIntents.add(getIntent(context, MainActivitys.class, 15));
             jumpIntents.add(getIntent(context, MainActivitys.class, -1));
         } else if (path <= 6) {
             pathStr = "开屏-首页-订阅-专辑详情-单曲播放页-专辑详情";
-            jumpIntents.add(getIntent(context, MainActivitys.class, 3));
-            jumpIntents.add(getIntent(context, MySubscribeActivity.class, 3));
-            jumpIntents.add(getIntent(context, AlbumNewActivity.class, 10));
-            jumpIntents.add(getIntent(context, SongNewActivity.class, 3));
-            jumpIntents.add(getIntent(context, AlbumNewActivity.class, 1));
+            jumpIntents.add(getIntent(context, MainActivitys.class, 55));
+            jumpIntents.add(getIntent(context, MySubscribeActivity.class, 25));
+            jumpIntents.add(getIntent(context, AlbumNewActivity.class, 20));
+            jumpIntents.add(getIntent(context, SongNewActivity.class, 25));
+            jumpIntents.add(getIntent(context, AlbumNewActivity.class, 20));
             jumpIntents.add(getIntent(context, MainActivitys.class, -1));
         } else if (path <= 7) {
             pathStr = "开屏-首页-单曲播放页";
-            jumpIntents.add(getIntent(context, MainActivitys.class, 3));
-            jumpIntents.add(getIntent(context, SongNewActivity.class, 1));
+            jumpIntents.add(getIntent(context, MainActivitys.class, 80));
+            jumpIntents.add(getIntent(context, SongNewActivity.class, 50));
             jumpIntents.add(getIntent(context, MainActivitys.class, -1));
         } else if (path <= 8) {
             pathStr = "开屏-首页-电台播放页";
-            jumpIntents.add(getIntent(context, MainActivitys.class, 3));
-            jumpIntents.add(getIntent(context, PlayActivity.class, 1));
+            jumpIntents.add(getIntent(context, MainActivitys.class, 90));
+            jumpIntents.add(getIntent(context, PlayActivity.class, 40));
             jumpIntents.add(getIntent(context, MainActivitys.class, -1));
         } else if (path <= 9) {
             pathStr = "开屏-首页-搜索-搜索结果-专辑详情-单曲播放-评论";
-            jumpIntents.add(getIntent(context, MainActivitys.class, 3));
-            jumpIntents.add(getIntent(context, SearchActivity.class, 3));
-            jumpIntents.add(getIntent(context, SearchActivity.class, 5));
-            jumpIntents.add(getIntent(context, AlbumNewActivity.class, 3));
-            jumpIntents.add(getIntent(context, SongNewActivity.class, 5));
-            jumpIntents.add(getIntent(context, WebCommentActivity.class, 1));
+            jumpIntents.add(getIntent(context, MainActivitys.class, 55));
+            jumpIntents.add(getIntent(context, SearchActivity.class, 30));
+            jumpIntents.add(getIntent(context, SearchActivity.class, 20));
+            jumpIntents.add(getIntent(context, AlbumNewActivity.class, 15));
+            jumpIntents.add(getIntent(context, SongNewActivity.class, 20));
+            jumpIntents.add(getIntent(context, WebCommentActivity.class, 15));
             jumpIntents.add(getIntent(context, MainActivitys.class, -1));
         } else {
             pathStr = "开屏-首页-我的钱包-云币充值-VIP页-首页";
-            jumpIntents.add(getIntent(context, MainActivitys.class, 5));
-            jumpIntents.add(getIntent(context, WalletMainActivity.class, 3));
-            jumpIntents.add(getIntent(context, VirtualCoinRechargeActivity.class, 5));
-            jumpIntents.add(getIntent(context, VipH5Activity.class, 5));
-            jumpIntents.add(getIntent(context, MainActivitys.class, 1));
+            jumpIntents.add(getIntent(context, MainActivitys.class, 60));
+            jumpIntents.add(getIntent(context, WalletMainActivity.class, 30));
+            jumpIntents.add(getIntent(context, VirtualCoinRechargeActivity.class, 30));
+            jumpIntents.add(getIntent(context, VipH5Activity.class, 20));
+            jumpIntents.add(getIntent(context, MainActivitys.class, 10));
             jumpIntents.add(getIntent(context, MainActivitys.class, -1));
         }
     }
